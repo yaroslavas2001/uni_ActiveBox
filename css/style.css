@@ -3,12 +3,19 @@ body{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color:#6c7279;
-  background-color: #000000;
+  background-color:#fff;
+  -webkit-font-smoothing: antaliased;
 }
 *,
 *:before,
 *:after{
   box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+margin: 0;
+}
+p{
+  margin: 0 0 10px;
 }
 .container{
   width: 100%;
@@ -16,7 +23,12 @@ body{
   margin: 0 auto;
 }
 .header{
-  
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 .header__inner{
   display: flex;
@@ -44,3 +56,55 @@ text-transform: uppercase;
 .nav__link:hover{
  opacity: 1;
 }
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+  background: #31344e
+   url("/css/fonn.jpg") ;
+  padding-top: 150px;
+}
+.intro__inner{
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro__title{
+  font-family: 'Open Sans', sans-serif; 
+ line-height: 1.1;
+  font-size: 65px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  
+}
+.intro__subtitle{
+  margin-bottom: 60px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 40px;
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  border: 0;
+  cursor: pointer;
+  transition: background .1s;
+}
+.btn--red{
+  background-color: #e84545;
+}
+.btn--red:hover{
+  background-color:#dd3434;}
