@@ -19,7 +19,7 @@ p{
 }
 .container{
   width: 100%;
-  min-width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .header{
@@ -62,7 +62,7 @@ text-transform: uppercase;
   justify-content: center;
   height: 750px;
   background: #31344e
-   url("/css/fonn.jpg") ;
+   url("/css/Layer\ 34.png") ;
   padding-top: 150px;
 }
 .intro__inner{
@@ -107,4 +107,34 @@ text-transform: uppercase;
   background-color: #e84545;
 }
 .btn--red:hover{
-  background-color:#dd3434;}
+  background-color:#dd3434;
+}
+
+/*Features*/
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 95px 0;
+}
+.features__item{
+  width: 33.333333%;
+  text-align:center;
+  padding: 0 40px;
+  margin: 25px 0;
+}
+.features__icon{
+  margin-bottom: 25px;
+}
+.features__title{
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features__text{
+  font-size: 14px;
+  color: #6c7279;
+  line-height: 1.5;
+}
